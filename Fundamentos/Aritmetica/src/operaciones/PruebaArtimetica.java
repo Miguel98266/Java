@@ -3,6 +3,12 @@ package operaciones;
 public class PruebaArtimetica {
 
     public static void main(String[] args) {
+
+//       Variables locales
+        int a = 10;
+        int b = 2;
+        miMetodo();
+
         System.out.println("Constructor vacio");
         Aritmetica aritmetica1 = new Aritmetica();
         aritmetica1.a = 2;
@@ -16,5 +22,14 @@ public class PruebaArtimetica {
         System.out.println("Constructor con argumentos");
         Aritmetica artimetica3 = new Aritmetica(2, 10);
         artimetica3.sumar();
+
+//      aritmetica=null
+//      System.gc();
+    }
+
+    public static void miMetodo() {
+        //La variable a esta fuera del alcance donde fue definida 
+        //a=10;
+        System.out.println("Otro metodo");
     }
 }
